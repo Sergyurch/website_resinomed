@@ -1,0 +1,270 @@
+@font-face {
+	font-family: 'Verdana';
+	src: url('../Verdana.woff');
+}
+
+html {
+	font-size: 14px;
+}
+
+body {
+	padding: 43px 43px 60px 43px;
+	font-family: Verdana, sans-serif;
+	color: #0d2e3a;
+}
+
+#container {
+	max-width: 1720px;
+	margin: auto;
+}
+
+header {
+	height: 108px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#logo {
+	width: 412px;
+	font-style: italic;
+	line-height: 48px;
+	color: #1c617b;
+}
+
+#logo h2 {
+	margin: 0;
+	font-size: 4.15rem;
+}
+
+#logo span:first-child {
+	color: #01d4b4;
+}
+
+#logo span:last-child {
+	font-size: 2.21rem;
+	color: #2d9bc5;
+}
+
+#menu {
+	width: calc(100% - 412px);
+	background-image: linear-gradient(to bottom, #1c617b, #01d2b4);
+	border-radius: 10px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#menu ul li {
+	display: inline-block;
+	height: 100%;
+}
+
+#menu ul li a {
+	font-size: 1.71rem;
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	display: flex;
+    align-items: center;
+    color: white;
+    padding: 0 40px;
+}
+
+#menu ul li a:hover {
+	background-image: linear-gradient(to top, #1c617b, #01d2b4);
+}
+
+aside {
+	width: 412px;
+	float: left;
+	padding-top: 50px;
+}
+
+#menu-aside ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+#menu-aside ul li:not(:first-child) {
+	margin-top: 20px;
+}
+
+#menu-aside ul a {
+	font-size: 1.43rem;
+	color: #1c617b;
+}
+
+#menu-aside ul a:hover, #menu-aside ul a:active {
+	color: black;
+}
+
+main {
+	margin-left: 412px;
+	padding-top: 50px;
+	min-height: 1050px;
+}
+
+main h1 {
+	font-size: 1.79rem;
+	color: #1c617b;
+	margin: 0;
+	font-weight: 500;
+}
+
+main article img {
+	margin-top: 12px;
+	width: 100%;
+	max-width: 570px;
+}
+
+main article p {
+	font-size: 1rem;
+	line-height: 25px;
+}
+
+main article h2 {
+	font-size: 1.21rem;
+	font-style: italic;
+}
+
+.unibix {
+	box-sizing: border-box;
+	width: 412px;
+	float: left;
+	text-align: right;
+	padding-right: 60px;
+	font-size: 18px;
+	line-height: 28px;
+	color: #1c617b;
+}
+
+.unibix a {
+	font-size: 1.29rem;
+	text-decoration: none;
+	color: #0d2d39;
+}
+
+.company {
+	margin-left: 412px;
+	display: flex;
+	padding-top: 40px;
+	justify-content: flex-end;
+	font-size: 1.29rem;
+	color: #1c617b;
+}
+
+.company img {
+	margin-left: 45px;
+}
+
+.company img:last-child {
+	margin-left: 8px;
+}
+
+@media screen and (max-width: 1400px) {
+	#menu ul li a {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	html {
+		font-size: 12px;
+	}
+
+	#logo, aside, .unibix {
+		width: 312px;
+	}
+
+	#menu {
+		width: calc(100% - 312px);
+	}
+
+	main {
+		margin-left: 312px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+
+	#logo {
+		text-align: center;
+	}
+
+	#menu {
+		width: 100%;
+	}
+
+	aside, .unibix {
+		float: none;
+	}
+
+	aside {
+		padding: 50px 0;
+	}
+
+	.unibix {
+		width: 100%;
+		padding: 0;
+	}
+
+	main, .company {
+		margin-left: 0;
+	}
+	main {
+		min-height: 0;
+	}
+
+	#middle {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+	body {
+		padding: 10px;
+	}
+
+	#logo {
+		width: 100%;
+		line-height: 35px;
+	}
+
+	#menu {
+		margin-top: 10px;
+	}
+
+	#menu ul {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	aside {
+		width: 100%;
+	}
+
+	.company {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#logo h2 {
+		font-size: 16vw;
+	}
+}
